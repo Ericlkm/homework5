@@ -28,15 +28,39 @@
   let saveBtn1 = document.querySelector(".btn1");
   let saveBtn2 = document.querySelector(".btn2");
   let saveBtn3 = document.querySelector(".btn3");
+  let saveBtn4 = document.querySelector(".btn4");
+  let saveBtn5 = document.querySelector(".btn5");
+  let saveBtn6 = document.querySelector(".btn6");
+  let saveBtn7 = document.querySelector(".btn7");
+  let saveBtn8 = document.querySelector(".btn8");
+  let saveBtn9 = document.querySelector(".btn9");
+
 
   let textBox = document.querySelector(".description");
   let textBox2 = document.querySelector(".description2");
   let textBox3 = document.querySelector(".description3");
+  let textBox4 = document.querySelector(".description4");
+  let textBox5 = document.querySelector(".description5");
+  let textBox6 = document.querySelector(".description6");
+  let textBox7 = document.querySelector(".description7");
+  let textBox8 = document.querySelector(".description8");
+  let textBox9 = document.querySelector(".description9");
 
-  
+
+
+
+
   textBox.textContent = localStorage.getItem("9am")
   textBox2.textContent = localStorage.getItem("10am")
   textBox3.textContent = localStorage.getItem("11am")
+  textBox4.textContent = localStorage.getItem("12pm")
+  textBox5.textContent = localStorage.getItem("1pm")
+  textBox6.textContent = localStorage.getItem("2pm")
+  textBox7.textContent = localStorage.getItem("3pm")
+  textBox8.textContent = localStorage.getItem("4pm")
+  textBox9.textContent = localStorage.getItem("5pm")
+
+
 
   saveBtn1.addEventListener("click", function(){
     localStorage.setItem("9am", textBox.value);
@@ -56,6 +80,43 @@ saveBtn2.addEventListener("click", function(){
   textBox3.textContent = textBox3.value;
 })
   
+saveBtn4.addEventListener("click", function(){
+  localStorage.setItem("12pm", textBox4.value);
+  textBox4.textContent = localStorage.getItem("12pm")
+  textBox4.textContent = textBox4.value;
+})
+
+saveBtn5.addEventListener("click", function(){
+  localStorage.setItem("1pm", textBox5.value);
+  textBox5.textContent = localStorage.getItem("1pm")
+  textBox5.textContent = textBox5.value;
+})
+
+saveBtn6.addEventListener("click", function(){
+  localStorage.setItem("2pm", textBox6.value);
+  textBox6.textContent = localStorage.getItem("2pm")
+  textBox6.textContent = textBox6.value;
+})
+
+saveBtn7.addEventListener("click", function(){
+  localStorage.setItem("3pm", textBox7.value);
+  textBox7.textContent = localStorage.getItem("3pm")
+  textBox7.textContent = textBox7.value;
+})
+
+saveBtn8.addEventListener("click", function(){
+  localStorage.setItem("4pm", textBox8.value);
+  textBox8.textContent = localStorage.getItem("4pm")
+  textBox8.textContent = textBox8.value;
+})
+
+saveBtn9.addEventListener("click", function(){
+  localStorage.setItem("5pm", textBox9.value);
+  textBox9.textContent = localStorage.getItem("5pm")
+  textBox9.textContent = textBox9.value;
+})
+
+
   // TODO: Add code to display the current date in the header of the page.
   var currentDate = new Date()
   $("#currentDay").text(currentDate);
